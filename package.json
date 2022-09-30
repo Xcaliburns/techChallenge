@@ -1,0 +1,11 @@
+{
+    "name": "wildschool",
+    "version": "1.0.0",
+    "description": "test entrée wildschool",
+    "main": "script.js",
+    "scripts": {
+        "sass": "sass --watch ./main.scss:./style.css"
+    },
+    "author": "",
+    "license": "ISC"
+}
