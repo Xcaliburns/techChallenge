@@ -9,8 +9,10 @@
             display: block;
             background-color: gold;
             border: 5px solid black;
+            position: relative;
             .bodyflex {
                 display: flex;
+                flex-direction: column;
             }
             header {
                 display: flex;
@@ -52,6 +54,7 @@
             .hero {
                 text-align: center;
                 background-image: url("./images/Jason.png");
+                background-position: center;
                 background-repeat: no-repeat;
                 display: block;
                 height: 66vh;

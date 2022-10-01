@@ -9,9 +9,11 @@ body {
   display: block;
   background-color: gold;
   border: 5px solid black;
+  position: relative;
 }
 body .bodyflex {
   display: flex;
+  flex-direction: column;
 }
 body header {
   display: flex;
@@ -53,6 +55,7 @@ body header nav .menu ul li {
 body .hero {
   text-align: center;
   background-image: url("./images/Jason.png");
+  background-position: center;
   background-repeat: no-repeat;
   display: block;
   height: 66vh;
