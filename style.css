@@ -1,3 +1,5 @@
+/*variables*/
+/*mixins*/
 a {
   cursor: pointer;
   text-decoration: none;
@@ -7,7 +9,7 @@ a {
 
 body {
   display: block;
-  background-color: gold;
+  background-color: rgb(255, 215, 0);
   border: 5px solid black;
   position: relative;
 }
@@ -69,6 +71,58 @@ body .hero h1 {
 }
 body .hero p {
   text-align: center;
+}
+body .royalFamily {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  border: 2px solid black;
+}
+body .royalFamily h2 {
+  text-align: left;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  text-decoration: underline;
+  display: block;
+  font-size: 30px;
+}
+body .royalFamily .laFamille {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+body .royalFamily .laFamille .king {
+  display: block;
+  margin: 25px;
+  font-size: 30px;
+  text-align: center;
+  width: 45vh;
+  height: 50vh;
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+body .royalFamily .laFamille .princess {
+  display: block;
+  margin: 25px;
+  font-size: 30px;
+  text-align: center;
+  width: 45vh;
+  height: 50vh;
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+body .royalFamily .laFamille .queen {
+  display: block;
+  margin: 25px;
+  font-size: 30px;
+  text-align: center;
+  width: 45vh;
+  height: 50vh;
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 50px;
 }
 body footer {
   display: block;
