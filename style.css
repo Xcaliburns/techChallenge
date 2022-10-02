@@ -162,6 +162,9 @@ body .tableau .tableauAssets tbody tr td {
   padding: 15px 20px;
   border: 1px solid #ddd;
 }
+body .contact {
+  font-size: 30px;
+}
 body footer {
   margin-top: 10px;
   display: block;
