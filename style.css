@@ -1,5 +1,6 @@
 html {
   border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
 }
 
 /*variables*/
@@ -62,17 +63,20 @@ body header nav .menu ul li {
 body .hero {
   text-align: center;
   background-image: url("./images/Jason.png");
-  background-position: center;
+  color: black;
+  font-size: 50px;
+  background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
   display: block;
   height: 66vh;
   border: 2px solid rgb(25, 25, 112);
 }
 body .hero h1 {
   text-align: center;
-  margin-top: 25vh;
+  margin-top: 5vh;
   display: block;
-  font-size: 30px;
 }
 body .hero p {
   text-align: center;
@@ -91,52 +95,77 @@ body .royalFamily h2 {
   display: block;
   font-size: 30px;
 }
-body .royalFamily .laFamille {
+body .laFamille {
   display: flex;
   flex-direction: row;
   margin: auto;
 }
-body .royalFamily .laFamille .king {
+body .laFamille .king {
   display: block;
   margin: 25px;
-  font-size: 30px;
+  font-size: 40px;
+  color: white;
   text-align: center;
   width: 45vh;
   height: 50vh;
   background-color: aliceblue;
   border: 2px solid rgb(25, 25, 112);
   border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/king.png");
 }
-body .royalFamily .laFamille .princess {
+body .laFamille .king:hover {
+  transform: rotate(360deg);
+  transition-duration: 500ms;
+}
+body .laFamille .princess {
   display: block;
   margin: 25px;
-  font-size: 30px;
+  font-size: 40px;
+  color: white;
   text-align: center;
   width: 45vh;
   height: 50vh;
   background-color: aliceblue;
   border: 2px solid rgb(25, 25, 112);
   border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/princess.png");
 }
-body .royalFamily .laFamille .queen {
+body .laFamille .princess:hover {
+  transform: rotate(360deg);
+  transition-duration: 500ms;
+}
+body .laFamille .queen {
   display: block;
   margin: 25px;
-  font-size: 30px;
+  font-size: 40px;
+  color: white;
   text-align: center;
   width: 45vh;
   height: 50vh;
   background-color: aliceblue;
   border: 2px solid rgb(25, 25, 112);
   border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/queen.png");
 }
-body .tableau {
+body .laFamille .queen:hover {
+  transform: rotate(360deg);
+  transition-duration: 500ms;
+}
+
+.tableau {
   font-size: 25px;
   text-align: left;
   margin-left: 4rem;
   margin-top: 4rem;
   text-decoration: underline;
 }
-body .tableau .tableauAssets {
+.tableau .tableauAssets {
   border-collapse: collapse;
   /*fusionne les bordures*/
   min-width: 1000px;
@@ -145,46 +174,48 @@ body .tableau .tableauAssets {
   margin: 100px auto;
   border: 2px solid rgb(25, 25, 112);
 }
-body .tableau .tableauAssets thead tr {
+.tableau .tableauAssets thead tr {
   background-color: midnightblue;
   color: white;
   text-align: left;
 }
-body .tableau .tableauAssets thead tr th {
+.tableau .tableauAssets thead tr th {
   padding: 15px 20px;
   border: 1px solid #ddd;
 }
-body .tableau .tableauAssets tbody tr:nth-child(even) {
+.tableau .tableauAssets tbody tr:nth-child(even) {
   /*colore 1 ligne sur 2*/
   background-color: #f3f3f3;
 }
-body .tableau .tableauAssets tbody tr td {
+.tableau .tableauAssets tbody tr td {
   padding: 15px 20px;
   border: 1px solid #ddd;
 }
-body .contact {
+
+.contact {
   display: block;
   font-size: 25px;
   text-align: left;
   margin-left: 40%;
 }
-body .contact #name {
+.contact #name {
   width: 500px;
   height: 2rem;
 }
-body .contact #email {
+.contact #email {
   width: 500px;
   height: 2rem;
 }
-body .contact #message {
+.contact #message {
   width: 500px;
   height: 10rem;
 }
-body .contact #envoyer {
+.contact #envoyer {
   margin-left: auto;
   margin-right: auto;
 }
-body footer {
+
+footer {
   margin-top: 10px;
   display: block;
   height: 20vh;

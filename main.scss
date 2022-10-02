@@ -1,5 +1,6 @@
         html {
             border-collapse: collapse;
+            font-family: 'Roboto', sans-serif;
         }
         /*variables*/
         
@@ -10,13 +11,18 @@
         @mixin character {
             display: block;
             margin: 25px;
-            font-size: 30px;
+            font-size: 40px;
+            color:white;
             text-align: center;
             width: 45vh;
             height: 50vh;
             background-color: aliceblue;
             border: $generic-border;
             border-radius: 50px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            
+           
         }
         
         a {
@@ -74,18 +80,24 @@
                 }
             }
             .hero {
+                
                 text-align: center;
                 background-image: url("./images/Jason.png");
-                background-position: center;
+                color: black;
+                font-size: 50px;
+                background-size: cover;
                 background-repeat: no-repeat;
+                max-width: 100%;
+                height: auto;
                 display: block;
                 height: 66vh;
                 border: $generic-border;
                 h1 {
+                    
                     text-align: center;
-                    margin-top: 25vh;
+                    margin-top: 5vh;
                     display: block;
-                    font-size: 30px;
+                    
                 }
                 p {
                     text-align: center;
@@ -103,6 +115,7 @@
                     text-decoration: underline;
                     display: block;
                     font-size: 30px;
+                    }
                 }
                 .laFamille {
                     display: flex;
@@ -110,12 +123,22 @@
                     margin: auto;
                     .king {
                         @include character;
+                        background-image: url("images/king.png" );
+                        &:hover{transform: rotate(360deg);
+                        transition-duration: 500ms;}
+                       
                     }
                     .princess {
                         @include character;
+                         background-image: url("images/princess.png" );
+                          &:hover{transform: rotate(360deg);
+                        transition-duration: 500ms;}
                     }
                     .queen {
                         @include character;
+                         background-image: url("images/queen.png" );
+                          &:hover{transform: rotate(360deg);
+                        transition-duration: 500ms;}
                     }
                 }
             }
@@ -182,4 +205,4 @@
                 height: 20vh;
                 border: $generic-border;
             }
-        }
+        
