@@ -155,7 +155,26 @@
                 }
             }
             .contact {
-                font-size: 30px;
+                display: block;
+                font-size: 25px;
+                text-align: left;
+                margin-left: 40%;
+                #name {
+                    width: 500px;
+                    height: 2rem;
+                }
+                #email {
+                    width: 500px;
+                    height: 2rem;
+                }
+                #message {
+                    width: 500px;
+                    height: 10rem;
+                }
+                #envoyer {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
             footer {
                 margin-top: 10px;
