@@ -54,7 +54,7 @@
                     flex-direction: row;
                     .logo {
                         font-size: 100px;
-                        color: blue;
+                        color: rgba(25, 25, 112, 1);
                         display: block;
                         width: 25vh;
                         margin: auto;
@@ -96,12 +96,21 @@
                     
                     text-align: center;
                     margin-top: 5vh;
-                    display: block;
-                    
+                    display: block;                    
                 }
                 p {
                     text-align: center;
                 }
+               
+                }
+            .about{
+                display:block;
+                width: 100%;
+                height: 20vh;
+                background-color:rgba(25, 25, 112, 1);
+                font-size: 20px;
+                color: white;
+                text-align: center;
             }
             .royalFamily {
                 display: flex;
@@ -130,7 +139,7 @@
                     }
                     .princess {
                         @include character;
-                         background-image: url("images/princess.png" );
+                         background-image: url("images/Princess.png" );
                           &:hover{transform: rotate(360deg);
                         transition-duration: 500ms;}
                     }
@@ -178,8 +187,12 @@
                 }
             }
             .contact {
+                
+                text-decoration: underline;
+                
                 display: block;
                 font-size: 25px;
+                
                 text-align: left;
                 margin-left: 40%;
                 #name {
@@ -202,7 +215,42 @@
             footer {
                 margin-top: 10px;
                 display: block;
-                height: 20vh;
+                height: 10vh;
                 border: $generic-border;
+                background-color:rgba(25, 25, 112, 1);
+                color: white;
+                a{
+                font-size: 20px;
+                color: #ddd;
+                }
             }
+
+
+
+            @media screen and (max-width: 1280px)
+{
+   
+        body{
+            border: none;
+            .royalFamily{
+                border: none;
+                .laFamille{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .about{
+                height: 50vh;
+            }
+            header{
+                height: 40vh;
+
+        nav{
+            .menu
+        {ul{
+            display: flex;
+            flex-direction: column;
+        }
+    }}}}}
+
         
